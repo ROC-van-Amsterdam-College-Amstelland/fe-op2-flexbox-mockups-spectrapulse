@@ -1,3 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 html, body{
+    display: flex;
+    flex-direction: column;
     height: 100%;
+    width: 100%;
+}
+
+header, main, footer, nav {
+    display: flex;
+}
+header {
+    height: 20%;
+    background-color: green;
+}
+header>nav {
+    flex-direction: row;
+    align-items: center;
+}
+header>nav>div {
+    display: block;
+    height: 60%;
+    width: 200px;
+    background-color: white;
+    margin: 0 20px;
+}
+main {
+    height: 60%;
+    background-color: orange;
+    justify-content: space-around;
+    align-content: center;
+}
+main p, main img {
+    margin-top: 30px;
+}
+main p {
+    max-width: 314px;
+    font-size: large;
+    font-family: Helvetica;
+}
+footer {
+    height: 20%;
+    background-color: white;
+}
+footer div:first-child, footer div:last-child {
+    display: block;
+    width: 48%;
+    height: 100%;
+}
+footer div:first-child {
+    background-color: red;
+}
+footer div:last-child {
+    background-color: blue;
+}
+footer {
+    justify-content: space-between;
 }
